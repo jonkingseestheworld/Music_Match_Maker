@@ -10,4 +10,4 @@
 (Image: howtogeek.com)   
 
   
-<br>The ideas of this project partly come from the 'new' feature, Duo Mix. I am curious to know what my partner may like from the songs I listened to in general. (I always got complained for my music choice!) 
+<br>The ideas of this project partly come from the 'new' feature, Duo Mix. I am curious to know what my partner may like from the songs I listened to in general. (I always got complained about my music choice!) 
