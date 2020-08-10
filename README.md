@@ -16,4 +16,4 @@ Let me have a go and see if I can do a better job?!
 
 #### Acknowledgement:
 
-There are different song recommendation algorithms I came across and I think this one by <a href="https://github.com/isacmlee/song-recommender">isaclee</a> is really well thought and easily scalable. My analysis here is based and expands on his work. Check out <a href="https://github.com/isacmlee/song-recommender">isaclee</a>'s repo - he has also created a script that enables automation of playlist creation (converting .csv song list into a Spotify playlist). 
+There are different song recommendation algorithms out there and I think this one by <a href="https://github.com/isacmlee/song-recommender">isaclee</a> is really well thought and easily extendable. My analysis here adopts and expands on his work. Check out <a href="https://github.com/isacmlee/song-recommender">isaclee</a>'s repo - he has also created a script that enables automation of playlist creation (converting .csv song list into a Spotify playlist). 
