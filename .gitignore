@@ -127,4 +127,5 @@ dmypy.json
 partner0_StreamingHist.csv
 partner1_StreamingHist.csv
 song_attributes.csv
+model_selection_script.ipynb
 hide/
