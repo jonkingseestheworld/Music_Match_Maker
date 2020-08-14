@@ -7,10 +7,11 @@ The idea here comes partly from the 'new' Spotify's Premium Duo service. I am cu
 
 <br>Spotify is testing a new subscription called Premium Duo that offers two Premium subscriptions for two people living in the same house at a discounted price. With Premium Duo, the users still have their own separate Spotify accounts. Duo also introduces a new playlist, the Duo Mix, combining the two persons’ music preferences into one. So far, my partner doesn't seem to quite enjoy Spotify's suggestions in the new playlist. 
 
+Let me have a go and see if I can do a better job?!
+
 <img src="img/spotify_duo.jpg" width="350">
 (Image: Spotify)
 
-Let me have a go and see if I can do a better job?!
 
 
 ### About the Music Data
