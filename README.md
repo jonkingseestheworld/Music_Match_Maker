@@ -10,7 +10,7 @@ Here is the thing - Spotify is testing a new subscription called Premium Duo tha
 <img src="img/spotify_duo.jpg" width="350">
 (Image: Spotify)
 
-Let me have a go and see if I can do a better job than Spotify?!
+<br> Let me have a go and see if I can do a better job than Spotify?!
 
 
 
@@ -23,8 +23,7 @@ This project uses two main sources of data: i) Spotify audio/track features ("so
 
 * The two 'xx_StreamingHist.csv' contains personal streaming data from partner0 and partner1 (for example, from me and my partner) requested via the <a href="https://support.spotify.com/us/article/data-rights-and-privacy-settings/"> Privacy Settings section of the individual Spotify's account pages</a>. The data were provided in the json format. There are four columns in the data-file ('artistName, trackName, endTime, msPlayed). Partner0's file has 15344 entries/rows and partner1's has 11424 entries.
 
-In terms of duration, over the past year partner0 accumulated 790+ hours of listening on Spotify and partner1 accumulated 500+ hours (i.e. the sum of the msPlayed column).
-
+In terms of duration, this translates to an accumulation of 790+ hours of listening on Spotify for partner0 over the past 12 months and 500+ hours for partner1 (i.e. the sum of the msPlayed column).
 
 
 #### Acknowledgement:
