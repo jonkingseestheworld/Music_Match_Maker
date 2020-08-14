@@ -3,7 +3,7 @@
 
 The idea here comes partly from the 'new' Spotify's Premium Duo service. I am curious to know what my partner may like from the songs I listened to in general. (A sad note: I always got complained about my music choice!) 
 
-<img src="img/badmusic.jpg" width="150">
+<img src="img/badmusic.jpg" width="200">
 
 <br>Spotify is testing a new subscription called Premium Duo that offers two Premium subscriptions for two people living in the same house at a discounted price. With Premium Duo, the users still have their own separate Spotify accounts. Duo also introduces a new playlist, the Duo Mix, combining the two persons’ music preferences into one. So far, my partner doesn't seem to quite enjoy Spotify's suggestions in the new playlist. 
 
