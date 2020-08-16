@@ -5,7 +5,7 @@ Here is the thing - Spotify is testing a new subscription called Premium Duo tha
 
 <img src="img/badmusic.jpg" width="220">
 
-<br>This got me very curious trying to know what songs I listened to in general may also be favoured by my partner based on his listening habit. 
+<br>This got me very curious trying to know what songs I listened to in general may also be favoured by my partner based on listening habit. 
 
 <img src="img/spotify_duo.jpg" width="350">
 (Image: Spotify)
@@ -13,7 +13,7 @@ Here is the thing - Spotify is testing a new subscription called Premium Duo tha
 <br> Let me have a go and see if I can do a better job than Spotify?!
 
 
-The project here analysed the streaming histories of my partner and me in the last 12 months, in relation to some metrics of song characteristics that are available from a large collated 'song attributes' database. The database contains >160,000 songs released in the years between 1921 and early 2020.
+The project here analysed the streaming histories of my partner and me in the last 12 months, in relation to some metrics of song characteristics that are available from a large collated 'song attributes' database. The database contains 160,000+ songs released in the years between 1921 and early 2020.
 
 **The objective** of this project was to build a classifier that may be used to predict what 'new' songs a person may like (and not like) based on their listening histories. 
 
@@ -28,5 +28,5 @@ This project uses two main sources of data: i) Spotify audio/track features ("so
 In terms of duration, this translates to an accumulation of 790+ hours of listening on Spotify for partner0 over the past 12 months and 500+ hours for partner1 (i.e. the sum of the msPlayed column).
 
 
-#### Acknowledgement:
-There are different song recommendation algorithms out there and I think this one by <a href="https://github.com/isacmlee/song-recommender">isaclee</a> is really well thought and easily extendable. My analysis here expands on his work. Remember to also check out <a href="https://github.com/isacmlee/song-recommender">isaclee</a>'s repo - he has also created a script that enables automation of playlist creation (converting .csv song list into a Spotify playlist). 
+#### Acknowledgement/Reference:
+There are different song recommendation algorithms available out there and I think this one by <a href="https://github.com/isacmlee/song-recommender">isaclee</a> is really well thought and easily extendable. My analysis here expands on his work. Remember to also check out <a href="https://github.com/isacmlee/song-recommender">isaclee</a>'s repo - he has also created a script that enables automation of playlist creation (converting .csv song list into a Spotify playlist). 
