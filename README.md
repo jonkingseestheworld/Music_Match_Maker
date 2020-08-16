@@ -1,5 +1,5 @@
 # Music Match Maker
-### A Music Analyzer giving suggestions on what my partner may like from my Spotify playlists based on Listening Histories and Song Features
+## A Music Analyzer giving suggestions on what my partner may like from my Spotify playlists based on Listening Histories and Song Features
 
 Here is the thing - Spotify is testing a new subscription called Premium Duo that offers two Premium subscriptions for two people living in the same house at a discounted price. With Premium Duo, the users still have their own separate Spotify accounts. Premium Duo also introduces a new playlist, the Duo Mix, combining the two persons’ music preferences into one. So far, my partner doesn't quite enjoy Spotify's suggestions in the new playlist. (A sad note: I always got complained about my music choice!)   
 
@@ -28,34 +28,30 @@ This project uses two main sources of data: i) **Spotify audio/track features** 
 In terms of duration, this translates to an accumulation of 790+ hours of listening on Spotify for partner0 over the past 12 months and 500+ hours for partner1 (i.e. the sum of the msPlayed column).
 
 
-Definition of 'Favourite' (vs 'not Favourite') song classes
+### Definition of 'Favourite' (vs 'not Favourite') song classes     
 'Favourite' (1) and 'not favourite' (0) songs are defined by the number of listens in the past 12 months. From an exploratory analysis (see histogram below), I found that with an overpowering majority of songs Partner0 only listened to them for less than 5 times last year, and this person quite seldom listened to a song more than 5 times. This is a clear cut-off.
 
-Check the section 'What makes a favourite song' below for more details.
+<br>Check the section 'What makes a favourite song' below for more details.
 
-Predictive Modelling
+### Predictive Modelling
 I will mainly compare the performance of 3 classification models here:
 
-Nu Support Vector Classifier
-Decision Tree
-Random Forest
-(# Logistic Regression as well for comparison purpose)
+> **Nu Support Vector Classifier**     
+  **Decision Tree**       
+  **Random Forest**
 
-Before narrowing down the search for further hyperparameter tuning with these models, I'd also tested a number of other classifiers (e.g. Gaussian Processes, Gradient Boosting, Multilayer Perceptron), the performances of which were not as great. The scripts and outputs of those initial exploratory attempts are stored in the same repo with this notebook.
+<br>Before narrowing down the search for further hyperparameter tuning with these models, I'd also tested a number of other classifiers (e.g. Gaussian Processes, Gradient Boosting, Multilayer Perceptron), the performances of which were not as great. The scripts and outputs of those initial exploratory attempts are stored in the same repo with this notebook.
 
-Evaluation metrics - F1 score
+### Evaluation metrics - F1 score
 When dealing with datasets with a high class imbalance like our case here (there are much fewer 'favourite' songs based on partner0's listening habit), accuracy may not be a reliable measure. The reason is that a high accuracy can be solely/largely contributed by a large number of correctly predicted negatives (i.e. True Negatives) while the positive class could be poorly predicted. In scenarios with heavily imbalanced data, we care equally about precision and recall, and F1 score would be a more preferred evaluation metric.
 
-Precision is a measure of the correctly identified positive cases from all the predicted positive cases. It is useful when the costs of False Positives is high. Recall measures the ratio of the correctly identified positive cases to all the actual positive cases. It is important when the cost of False Negatives is high.
+<br>Precision is a measure of the correctly identified positive cases from all the predicted positive cases. It is useful when the costs of False Positives is high. Recall measures the ratio of the correctly identified positive cases to all the actual positive cases. It is important when the cost of False Negatives is high.
 
-Then, F1 score is a harmonic mean of Precision and Recall, thus giving more attention to the incorrectly classified cases in general.
+<br>Then, F1 score is a harmonic mean of Precision and Recall, thus giving more attention to the incorrectly classified cases in general.
 
-Highlights of Results
+### Highlights of Results
 A trained model using a Random Forest Classifier was able to predict unseen test data with a F1 score of 77.8%, which would be used as the final algorithm for music recommendation to predict what songs partner0 may like in an entirely separate partner1's songlist.
 
-In comparison, Decision Tree Classifier acquired a score of 72.8% and Nu Support Vector Classifier a very low score of 50.6%
 
-
-
-#### Acknowledgement/Reference:
+### Acknowledgement/Reference:
 There are different song recommendation algorithms available out there and I think this one by <a href="https://github.com/isacmlee/song-recommender">isaclee</a> is really well thought and easily extendable. My analysis here expands on his work. Remember to also check out <a href="https://github.com/isacmlee/song-recommender">isaclee</a>'s repo - he has also created a script that enables automation of playlist creation (converting .csv song list into a Spotify playlist). 
