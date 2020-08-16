@@ -29,6 +29,8 @@ In terms of duration, this translates to an accumulation of 790+ hours of listen
 ### Definition of 'Favourite' (vs 'not Favourite') song classes     
 'Favourite' (1) and 'not favourite' (0) songs are defined by the number of listens in the past 12 months. From an exploratory analysis (see histogram below), I found that with an overpowering majority of songs Partner0 only listened to them for less than 5 times last year, and this person quite seldom listened to a song more than 5 times. This is a clear cut-off.
 
+<img src="img/favourite.hist.png" width="400">
+
 <br>Check the section '**What makes a favourite song'** in the notebook for more details.
 
 ### Predictive Modelling
@@ -50,6 +52,7 @@ When dealing with datasets with a high class imbalance like our case here (there
 ### Highlights of Results
 A trained model using a Random Forest Classifier was able to predict unseen test data with a F1 score of 77.8%, which would be used as the final algorithm for music recommendation to predict what songs partner0 may like in an entirely separate partner1's songlist.
 
+<br> Next, I will learn to automate the creation of a playlist using a Python script.
 
 ### Acknowledgement/Reference:
 There are different song recommendation algorithms available out there and I think this one by <a href="https://github.com/isacmlee/song-recommender">isaclee</a> is really well thought and easily extendable. Remember to also check out <a href="https://github.com/isacmlee/song-recommender">isaclee</a>'s repo. My analysis here has extended based on his work. I trained a wider range of models as [an initial exploratory attempt](init_outputs.txt) at the beginning (before filtering out models with very low performance). Also, I have written another notebook for a more in-depth [exploration of the 'song attributes' data set](EDA_Song_Attributes.ipynb), for example examining how different song features varied across years.
