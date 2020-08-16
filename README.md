@@ -29,7 +29,7 @@ In terms of duration, this translates to an accumulation of 790+ hours of listen
 ### Definition of 'Favourite' (vs 'not Favourite') song classes     
 'Favourite' (1) and 'not favourite' (0) songs are defined by the number of listens in the past 12 months. From an exploratory analysis (see histogram below), I found that with an overpowering majority of songs Partner0 only listened to them for less than 5 times last year, and this person quite seldom listened to a song more than 5 times. This is a clear cut-off.
 
-<br>Check the section 'What makes a favourite song' below for more details.
+<br>Check the section '**What makes a favourite song'** in the notebook for more details.
 
 ### Predictive Modelling
 I will mainly compare the performance of 3 classification models here:
@@ -38,7 +38,7 @@ I will mainly compare the performance of 3 classification models here:
   **Decision Tree**       
   **Random Forest**
 
-<br>Before narrowing down the search for further hyperparameter tuning with these models, I'd also tested a number of other classifiers (e.g. Gaussian Processes, Gradient Boosting, Multilayer Perceptron), the performances of which were not as great. The scripts and outputs of those initial exploratory attempts are stored in the same repo with this notebook.
+<br>Before narrowing down the search for further hyperparameter tuning with these models, I'd also tested a number of other classifiers (e.g. Gaussian Processes, Gradient Boosting, Multilayer Perceptron), the performances of which were not as great. The [scripts](initial_model_select_preview.py) and [outputs](init_outputs.txt) of those initial exploratory attempts are stored in the same repo with this notebook.
 
 ### Evaluation metrics - F1 score
 When dealing with datasets with a high class imbalance like our case here (there are much fewer 'favourite' songs based on partner0's listening habit), accuracy may not be a reliable measure. The reason is that a high accuracy can be solely/largely contributed by a large number of correctly predicted negatives (i.e. True Negatives) while the positive class could be poorly predicted. In scenarios with heavily imbalanced data, we care equally about precision and recall, and F1 score would be a more preferred evaluation metric.
@@ -52,4 +52,4 @@ A trained model using a Random Forest Classifier was able to predict unseen test
 
 
 ### Acknowledgement/Reference:
-There are different song recommendation algorithms available out there and I think this one by <a href="https://github.com/isacmlee/song-recommender">isaclee</a> is really well thought and easily extendable. Remember to also check out <a href="https://github.com/isacmlee/song-recommender">isaclee</a>'s repo. My analysis here has extended based on his work. I trained a wider range of models as an initial exploratory attempt at the beginning (before filtering out models with very low performance). Also, I have written another notebook for a more in-depth [exploration of the 'song attributes' data set](EDA_Song_Attributes.ipynb), for example examining how different song features varied across years.
+There are different song recommendation algorithms available out there and I think this one by <a href="https://github.com/isacmlee/song-recommender">isaclee</a> is really well thought and easily extendable. Remember to also check out <a href="https://github.com/isacmlee/song-recommender">isaclee</a>'s repo. My analysis here has extended based on his work. I trained a wider range of models as [an initial exploratory attempt](init_outputs.txt) at the beginning (before filtering out models with very low performance). Also, I have written another notebook for a more in-depth [exploration of the 'song attributes' data set](EDA_Song_Attributes.ipynb), for example examining how different song features varied across years.
