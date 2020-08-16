@@ -35,7 +35,6 @@ DATAPATH = ""
 
 # Read in personal Streaming History data
 SH0_df = pd.read_csv(os.path.join(DATAPATH, "partner0_StreamingHist.csv")) #data from partner0 that will be used for building/training the ML models
-#SH1_df = pd.read_csv(os.path.join(DATAPATH, "partner1_StreamingHist.csv")) #data from partner1 that will be used in final predictions
 
 # Read in Song Attributes data
 df_attr = pd.read_csv(os.path.join(DATAPATH, "song_attributes.csv"))
