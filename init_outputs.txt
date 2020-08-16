@@ -1,73 +1,73 @@
 ******Linear Models******
 ---LogisticRegression---
 {'C': 1.0, 'class_weight': None, 'dual': False, 'fit_intercept': True, 'intercept_scaling': 1, 'l1_ratio': None, 'max_iter': 100, 'multi_class': 'auto', 'n_jobs': None, 'penalty': 'l2', 'random_state': None, 'solver': 'lbfgs', 'tol': 0.0001, 'verbose': 0, 'warm_start': False}
-[0.55873926 0.57352941 0.57101865 0.55652174 0.56699577]
-0.565360965192149
-f1_score_test: 0.23557692307692304
+[0.5414966  0.53989362 0.52257182 0.57712766 0.54374159]
+0.5449662565633538
+f1_score_test: 0.5439153439153439
 
 ******Kernel Methods******
 ---Linear Support Vector Classifier---
 {'C': 1.0, 'class_weight': None, 'dual': True, 'fit_intercept': True, 'intercept_scaling': 1, 'loss': 'squared_hinge', 'max_iter': 1000, 'multi_class': 'ovr', 'penalty': 'l2', 'random_state': None, 'tol': 0.0001, 'verbose': 0}
-[0.55539568 0.58139535 0.57796853 0.55813953 0.56699577]
-0.5679789724657682
-f1_score_test: 0.23357664233576636
+[0.54076087 0.54569536 0.5298913  0.56951872 0.54886212]
+0.5469456739712338
+f1_score_test: 0.5471898197242842
 
 ---Support Vector Classifier---
 {'C': 1.0, 'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'rbf', 'max_iter': -1, 'probability': True, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': False}
-[0.5761194  0.73627845 0.72467532 0.74666667 0.77248677]
-0.7112453227871318
-f1_score_test: 0.29608938547486036
+[0.58402204 0.74340528 0.73100121 0.75184275 0.7175    ]
+0.7055542544924478
+f1_score_test: 0.7353815659068383
 
 ---Nu Support Vector Classifer---
 {'break_ties': False, 'cache_size': 200, 'class_weight': None, 'coef0': 0.0, 'decision_function_shape': 'ovr', 'degree': 3, 'gamma': 'scale', 'kernel': 'rbf', 'max_iter': -1, 'nu': 0.5, 'probability': True, 'random_state': None, 'shrinking': True, 'tol': 0.001, 'verbose': False}
-[0.65470852 0.80729167 0.8168643  0.80107527 0.81208936]
-0.7784058213797578
-f1_score_test: 0.32926829268292684
+[0.67737617 0.81445783 0.80385078 0.84144819 0.78282209]
+0.783991012103975
+f1_score_test: 0.708695652173913
 
 ******Neighbour******
 ---K-nearest neighbours Ball---
 {'algorithm': 'ball_tree', 'leaf_size': 30, 'metric': 'minkowski', 'metric_params': None, 'n_jobs': None, 'n_neighbors': 5, 'p': 2, 'weights': 'uniform'}
-[0.77021823 0.78795483 0.79361179 0.7815231  0.81203008]
-0.7890676048084962
-f1_score_test: 0.3444730077120823
+[0.74738068 0.79245283 0.7744186  0.80280047 0.79439252]
+0.7822890200305022
+f1_score_test: 0.700518134715026
 
 ******Gaussian Methods******
 ---Gaussian Process---
 {'copy_X_train': True, 'kernel': None, 'max_iter_predict': 100, 'multi_class': 'one_vs_rest', 'n_jobs': None, 'n_restarts_optimizer': 0, 'optimizer': 'fmin_l_bfgs_b', 'random_state': None, 'warm_start': False}
-[0.5814978  0.69647696 0.68518519 0.68463612 0.69421488]
-0.6684021883886203
-f1_score_test: 0.28211586901763225
+[0.58681023 0.71030303 0.67334168 0.70062112 0.68176101]
+0.670567412100657
+f1_score_test: 0.7170542635658913
 
 ******Decision Tree******
 ---Decision Tree---
 {'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_impurity_split': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'presort': 'deprecated', 'random_state': None, 'splitter': 'best'}
-[0.70760234 0.78968792 0.80816327 0.78138223 0.82777778]
-0.7829227069544602
-f1_score_test: 0.38730158730158726
+[0.71387283 0.81664499 0.78580482 0.80317041 0.80774194]
+0.7854469974172317
+f1_score_test: 0.6958525345622119
 
 ******Ensemble methods******
 ---Random forest---
 {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'auto', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_impurity_split': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}
-[0.76506024 0.8952381  0.91549296 0.90756303 0.92524683]
-0.8817202291349467
-f1_score_test: 0.4533333333333333
+[0.76638177 0.91006711 0.91309987 0.91354839 0.88976378]
+0.8785721834796746
+f1_score_test: 0.7796610169491526
 
 ---AdaBoost---
 {'algorithm': 'SAMME.R', 'base_estimator': None, 'learning_rate': 1.0, 'n_estimators': 50, 'random_state': None}
-[0.53957997 0.75668449 0.77333333 0.78120805 0.77732794]
-0.7256267563831426
-f1_score_test: 0.29775280898876405
+[0.50613497 0.76455696 0.69487179 0.76426799 0.75888325]
+0.6977429930055342
+f1_score_test: 0.7213459516298633
 
 ---GradientBoosting---
 {'ccp_alpha': 0.0, 'criterion': 'friedman_mse', 'init': None, 'learning_rate': 0.1, 'loss': 'deviance', 'max_depth': 3, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_impurity_split': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_iter_no_change': None, 'presort': 'deprecated', 'random_state': None, 'subsample': 1.0, 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}
-[0.615625   0.81937173 0.82416107 0.81671159 0.84038199]
-0.7832502767370302
-f1_score_test: 0.3006134969325154
+[0.60176991 0.82587065 0.81094527 0.81517748 0.79648241]
+0.7700491445085815
+f1_score_test: 0.7524115755627009
 
 ******mlpNetwork******
 ---MLP NNetwork---
 {'activation': 'relu', 'alpha': 0.0001, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': (100,), 'learning_rate': 'constant', 'learning_rate_init': 0.001, 'max_fun': 15000, 'max_iter': 200, 'momentum': 0.9, 'n_iter_no_change': 10, 'nesterovs_momentum': True, 'power_t': 0.5, 'random_state': None, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False, 'warm_start': False}
-[0.5625966  0.75704698 0.7408377  0.70246734 0.7254902 ]
-0.6976877631893881
-f1_score_test: 0.24918032786885244
+[0.53834586 0.72772898 0.70052083 0.73815461 0.74338624]
+0.6896273077072796
+f1_score_test: 0.7497467071935158
 
