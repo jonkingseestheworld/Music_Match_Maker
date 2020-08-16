@@ -29,7 +29,7 @@ In terms of duration, this translates to an accumulation of 790+ hours of listen
 ### Definition of 'Favourite' (vs 'not Favourite') song classes     
 'Favourite' (1) and 'not favourite' (0) songs are defined by the number of listens in the past 12 months. From an exploratory analysis (see histogram below), I found that with an overpowering majority of songs Partner0 only listened to them for less than 5 times last year, and this person quite seldom listened to a song more than 5 times. This is a clear cut-off.
 
-<img src="img/favourite.hist.png" width="400">
+<img src="img/favourite_hist.png" width="400">
 
 <br>Check the section '**What makes a favourite song'** in the notebook for more details.
 
