@@ -12,7 +12,6 @@ Here is the thing - Spotify is testing a new subscription called Premium Duo tha
 
 <br> Let me have a go and see if I can do a better job than Spotify?!
 
-
 The project here analyzed the streaming histories of my partner and me in the last 12 months, in relation to some metrics of song characteristics that are available from a large collated 'song attributes' database. The database contains 160,000+ songs released in the years between 1921 and early 2020.
 
 **The objective** of this project was to build a classifier that may be used to predict what 'new' songs a person may like (and not like) based on their listening histories. 
@@ -26,7 +25,6 @@ This project uses two main sources of data: i) **Spotify audio/track features** 
 * The two **'xx_StreamingHist.csv'** contains personal streaming data from partner0 and partner1 (for example, from me and my partner) requested via the <a href="https://support.spotify.com/us/article/data-rights-and-privacy-settings/"> Privacy Settings section of the individual Spotify's account pages</a>. The data were provided in the json format. There are four columns in the data-file (artistName, trackName, endTime, msPlayed). Partner0's file has 15344 entries/rows and partner1's has 11424 entries.
 
 In terms of duration, this translates to an accumulation of 790+ hours of listening on Spotify for partner0 over the past 12 months and 500+ hours for partner1 (i.e. the sum of the msPlayed column).
-
 
 ### Definition of 'Favourite' (vs 'not Favourite') song classes     
 'Favourite' (1) and 'not favourite' (0) songs are defined by the number of listens in the past 12 months. From an exploratory analysis (see histogram below), I found that with an overpowering majority of songs Partner0 only listened to them for less than 5 times last year, and this person quite seldom listened to a song more than 5 times. This is a clear cut-off.
@@ -54,4 +52,4 @@ A trained model using a Random Forest Classifier was able to predict unseen test
 
 
 ### Acknowledgement/Reference:
-There are different song recommendation algorithms available out there and I think this one by <a href="https://github.com/isacmlee/song-recommender">isaclee</a> is really well thought and easily extendable. My analysis here expands on his work. Remember to also check out <a href="https://github.com/isacmlee/song-recommender">isaclee</a>'s repo - he has also created a script that enables automation of playlist creation (converting .csv song list into a Spotify playlist). 
+There are different song recommendation algorithms available out there and I think this one by <a href="https://github.com/isacmlee/song-recommender">isaclee</a> is really well thought and easily extendable. Remember to also check out <a href="https://github.com/isacmlee/song-recommender">isaclee</a>'s repo. My analysis here has extended based on his work. I trained a wider range of models as an initial exploratory attempt at the beginning (before filtering out models with very low performance). Also, I have written another notebook for a more in-depth [exploration of the 'song attributes' data set](https://github.com/jonkingseestheworld/Music_Match_Maker/blob/master/EDA_Song_Attributes.ipynb), for example examining how different song features varied across years.
