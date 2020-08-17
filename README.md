@@ -12,7 +12,7 @@ Here is the thing - Spotify is testing a new subscription called Premium Duo tha
 
 <br> Let me have a go and see if I can do a better job than Spotify?!
 
-The project here analyzed the streaming histories of my partner and me in the last 12 months, in relation to some metrics of song characteristics that are available from a large collated 'song attributes' database. The database contains 160,000+ songs released in the years between 1921 and early 2020.
+[The project here](music_analyser_notebook.ipynb) analyzed the streaming histories of my partner and me in the last 12 months, in relation to some metrics of song characteristics that are available from a large collated 'song attributes' database. The database contains 160,000+ songs released in the years between 1921 and early 2020.
 
 **The objective** of this project was to build a classifier that may be used to predict what 'new' songs a person may like (and not like) based on their listening histories. 
 
